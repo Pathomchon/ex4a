@@ -8,7 +8,6 @@ function validate(pace){
 		return {"status":0,"message":msg,"hour":0,"min":0};
 	}
 }
-
 function paceCal(pace,dist){
 var min = dist * pace;
 		var hour = 0;
@@ -29,5 +28,5 @@ function calculate(p,d){
 		var pc = paceCal(pace,dist);
 	//---------------------------
 		msg = "successfully calculated!"
-		return {"status":1,"message":msg,"hour":hour,"min":min};
+		return {"status":1,"message":msg,"hour":pc.hour,"min":pc.min};
 }
